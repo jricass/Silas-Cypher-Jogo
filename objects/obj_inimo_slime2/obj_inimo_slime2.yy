@@ -36,6 +36,9 @@
     "name":"spr_slime2_idle",
     "path":"sprites/spr_slime2_idle/spr_slime2_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_slime_blue_idle",
+    "path":"sprites/spr_slime_blue_idle/spr_slime_blue_idle.yy",
+  },
   "visible":true,
 }

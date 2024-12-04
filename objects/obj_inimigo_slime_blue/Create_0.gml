@@ -5,7 +5,7 @@
 tempo_estado = game_get_speed(gamespeed_fps) * 15;
 timer_estado = tempo_estado;
 
-range = 10
+range = 15;
 
 // Criando uma estrutura com as sprites dele
 sprite =
@@ -170,6 +170,9 @@ estado_death.inicia = function()
 {
 	sprite_index = sprite.death;
 	image_index = 0;
+	
+	// Mudando mascara de colisão
+	mask_index = spr_mask_death;
 	
 	dead = true;
 }

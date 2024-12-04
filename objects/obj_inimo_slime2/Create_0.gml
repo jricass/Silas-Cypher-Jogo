@@ -35,8 +35,15 @@ estado_attack.roda = function()
 	{
 		var _dir = point_direction(x, y, alvo.x, alvo.y);
 		// Se movendo na direcao do player quando pulando
-		x += lengthdir_x(1, dir);
-		y += lengthdir_y(1, dir);
+		var _x = lengthdir_x(1, dir);
+		var _y = lengthdir_y(1, dir);
+		
+		// Me movendo se nao estou colidindo com a parede
+		if (!place_meeting(x + _x, y + _y, obj_colisor))
+		{
+			x += _x;
+			y += _y;
+		}
 	}
 	
 	if (image_index >= image_number - 0.2)
