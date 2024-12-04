@@ -27,7 +27,8 @@ event_inherited();
 
 estado_hunt = new estado();
 
-// Códigos sobrescritos a partir daqui
+// Códigos sobrescritos a partir daqui:
+
 #region estado_idle
 
 estado_idle.inicia = function()
@@ -195,6 +196,9 @@ estado_hunt.inicia = function()
 	{
 		alvo = obj_player.id;	
 	}
+	
+	cria_aviso();
+	
 }
 
 estado_hunt.roda = function()

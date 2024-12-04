@@ -1,4 +1,4 @@
-window_set_size(1280, 720) // Deixa o tamanho da janela em HD
+/* window_set_size(1280, 720) // Deixa o tamanho da janela em HD
 window_center() // Centraliza a janela
 
 
