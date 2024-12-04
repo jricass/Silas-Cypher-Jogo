@@ -1,0 +1,1 @@
+troca_estado(estado_hurt);
