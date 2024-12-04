@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_fogueira",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_fogueira",
   "overriddenProperties":[],
@@ -34,6 +37,9 @@
     "name":"spr_fogueira_idle",
     "path":"sprites/spr_fogueira_idle/spr_fogueira_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_fogueira_idle",
+    "path":"sprites/spr_fogueira_idle/spr_fogueira_idle.yy",
+  },
   "visible":true,
 }

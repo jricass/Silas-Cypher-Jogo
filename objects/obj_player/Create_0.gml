@@ -10,6 +10,32 @@ meu_dano = noone;
 dano_poise = 6;
 
 imageindex = 0;
+
+// Metodo de interação com a fogueira (SAVE)
+ativa_fogueira = function()
+{
+	// Usando a dir para saber se estou colidindo com a fogueira
+	var _x = lengthdir_x(2, dir * 90);
+	var _y = lengthdir_y(2, dir * 90);
+	
+	var _fog = instance_place(x + _x, y + _y, obj_fogueira);
+	
+	if (_fog)
+	{
+		if (keyboard_check_pressed(vk_enter))
+		{
+			with(_fog)
+			{
+				// Se a fogueira esta idle, ativo ela
+				if (estado_atual == estado_idle)
+				{
+					troca_estado(estado_start);	
+				}
+			}
+		}
+	}
+	
+}
 	
 // Iniciando primeiro estado
 estado_idle = new estado();
@@ -73,6 +99,8 @@ estado_idle.inicia = function()
 
 estado_idle.roda = function()
 {
+	ativa_fogueira();
+	
 	// Achando a condição para sair deste estado
 	
 	// SE estiver em movimento, então estado = walk
@@ -110,6 +138,8 @@ estado_walk.roda = function()
 	dir = (point_direction(0, 0, velh, velv) div 90);
 	// Condição para sair do estado
 	// Se estou parado, eu vou para idle
+
+	ativa_fogueira();
 	
 	// Ajustando o lado que ele olha
 	if (velh != 0)

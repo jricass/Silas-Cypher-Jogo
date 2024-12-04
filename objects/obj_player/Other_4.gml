@@ -1,0 +1,1 @@
+inicia_room();
