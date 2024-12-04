@@ -71,6 +71,7 @@
     {"id":{"name":"obj_poste_direita","path":"objects/obj_poste_direita/obj_poste_direita.yy",},},
     {"id":{"name":"obj_poste_esquerda","path":"objects/obj_poste_esquerda/obj_poste_esquerda.yy",},},
     {"id":{"name":"obj_poste_frente","path":"objects/obj_poste_frente/obj_poste_frente.yy",},},
+    {"id":{"name":"obj_screenshake","path":"objects/obj_screenshake/obj_screenshake.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Mundo","path":"rooms/Mundo/Mundo.yy",},},
     {"id":{"name":"state_machine","path":"scripts/state_machine/state_machine.yy",},},

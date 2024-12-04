@@ -133,6 +133,10 @@ estado_hurt.inicia = function()
 {
 	sprite_index = sprite.hurt;
 	image_index = 0;
+
+	// tremendo a tela
+	//obj_screenshake.valor += 10;
+	obj_screenshake.ang = 5;
 }
 
 estado_hurt.roda = function()
@@ -253,7 +257,10 @@ estado_hunt.roda = function()
 					// Ajuda
 					with(_slime)
 					{
-						troca_estado(estado_hunt);
+						if (estado_atual != estado_death)
+						{
+							troca_estado(estado_hunt);
+						}
 					}
 				}
 			}
