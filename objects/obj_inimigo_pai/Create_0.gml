@@ -8,6 +8,8 @@ velv = 0;
 // Definindo equilibrio atual
 poise = poise_max;
 
+gerado = false;
+
 // Cria Aviso
 cria_aviso = function()
 {
