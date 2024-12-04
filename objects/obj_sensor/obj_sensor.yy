@@ -8,8 +8,8 @@
   "name":"obj_sensor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Variados",
+    "path":"folders/Objetos/Variados.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,7 +28,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"destino","filters":[
         "GMRoom",
-      ],"listItems":[],"multiselect":false,"name":"destino","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rm_modelo","path":"rooms/rm_modelo/rm_modelo.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_modelo","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"destino","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rm_principal","path":"rooms/rm_principal/rm_principal.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_principal","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"posicao_x","filters":[],"listItems":[],"multiselect":false,"name":"posicao_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"posicao_y","filters":[],"listItems":[],"multiselect":false,"name":"posicao_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],

@@ -9,8 +9,8 @@
   "name":"obj_fogueira",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Fogueira",
+    "path":"folders/Objetos/Fogueira.yy",
   },
   "parentObjectId":{
     "name":"obj_deco_pai",

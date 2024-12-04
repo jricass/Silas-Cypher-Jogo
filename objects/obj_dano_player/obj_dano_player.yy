@@ -10,8 +10,8 @@
   "name":"obj_dano_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Variados",
+    "path":"folders/Objetos/Variados.yy",
   },
   "parentObjectId":null,
   "persistent":false,

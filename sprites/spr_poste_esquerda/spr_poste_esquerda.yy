@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Luzes",
-    "path":"folders/Sprites/Level/Luzes.yy",
+    "name":"Postes",
+    "path":"folders/Sprites/Level/Luzes/Postes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

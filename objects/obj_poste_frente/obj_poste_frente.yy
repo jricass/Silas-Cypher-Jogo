@@ -8,8 +8,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_deco_pai","path":"objects/obj_deco_pai/obj_deco_pai.yy",},"propertyId":{"name":"transparente","path":"objects/obj_deco_pai/obj_deco_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{
-    "name":"PostesDeLuz",
-    "path":"folders/Objetos/PostesDeLuz.yy",
+    "name":"Postes",
+    "path":"folders/Objetos/Postes.yy",
   },
   "parentObjectId":{
     "name":"obj_deco_pai",

@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Luzes",
-    "path":"folders/Sprites/Level/Luzes.yy",
+    "name":"Tochas",
+    "path":"folders/Sprites/Level/Luzes/Tochas.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_poste_direita",
-  "eventList":[],
-  "managed":true,
-  "name":"obj_poste_direita",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_deco_pai","path":"objects/obj_deco_pai/obj_deco_pai.yy",},"propertyId":{"name":"transparente","path":"objects/obj_deco_pai/obj_deco_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+  "%Name":"obj_tocha",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
+  "managed":true,
+  "name":"obj_tocha",
+  "overriddenProperties":[],
   "parent":{
-    "name":"Postes",
-    "path":"folders/Objetos/Postes.yy",
+    "name":"Tocha",
+    "path":"folders/Objetos/Tocha.yy",
   },
   "parentObjectId":{
     "name":"obj_deco_pai",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_poste_direita",
-    "path":"sprites/spr_poste_direita/spr_poste_direita.yy",
+    "name":"spr_torch",
+    "path":"sprites/spr_torch/spr_torch.yy",
   },
   "spriteMaskId":null,
   "visible":true,
