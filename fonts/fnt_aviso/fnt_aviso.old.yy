@@ -3,7 +3,7 @@
   "%Name":"fnt_aviso",
   "AntiAlias":1,
   "applyKerning":0,
-  "ascender":21,
+  "ascender":14,
   "ascenderOffset":0,
   "bold":false,
   "canGenerateBitmap":true,
@@ -12,8 +12,8 @@
   "fontName":"Copperplate Gothic Bold",
   "glyphOperations":0,
   "glyphs":{
-    "32":{"character":32,"h":37,"offset":0,"shift":6,"w":6,"x":2,"y":2,},
-    "33":{"character":33,"h":37,"offset":2,"shift":9,"w":21,"x":10,"y":2,},
+    "32":{"character":32,"h":30,"offset":0,"shift":4,"w":4,"x":2,"y":2,},
+    "33":{"character":33,"h":30,"offset":1,"shift":6,"w":20,"x":8,"y":2,},
   },
   "hinting":0,
   "includeTTF":false,
@@ -21,7 +21,7 @@
   "italic":false,
   "kerningPairs":[],
   "last":0,
-  "lineHeight":27,
+  "lineHeight":18,
   "maintainGms1Font":false,
   "name":"fnt_aviso",
   "parent":{
@@ -37,7 +37,7 @@
   "resourceVersion":"2.0",
   "sampleText":"!!!",
   "sdfSpread":8,
-  "size":18.0,
+  "size":12.0,
   "styleName":"Regular",
   "textureGroupId":{
     "name":"Default",

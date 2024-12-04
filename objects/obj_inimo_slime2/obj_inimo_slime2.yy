@@ -6,7 +6,9 @@
   ],
   "managed":true,
   "name":"obj_inimo_slime2",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},"propertyId":{"name":"vida","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
+  ],
   "parent":{
     "name":"Slimes",
     "path":"folders/Objetos/Entidades/Inimigos/Slimes.yy",

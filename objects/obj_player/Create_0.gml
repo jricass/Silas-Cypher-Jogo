@@ -30,6 +30,7 @@ estado_death = new estado();
 
 lida_dano = function(_dano = 1, _poise = 1)
 {
+	if (estado_atual == estado_death) return;
 	// Perdendo Vida
 	vida -= _dano;
 	
@@ -241,6 +242,20 @@ estado_death.roda = function()
 	if (imageindex > image_index)
 	{
 		image_index = image_number - 1;	
+		
+		// Mostrando game over
+		if (global.game_over == false)
+		{
+			// Instanciar no x e y da camera
+			var _cam_x = camera_get_view_x(view_camera[0]);
+			var _cam_y = camera_get_view_y(view_camera[0]);
+			
+			layer_sequence_create("Sequence", _cam_x, _cam_y, sq_morreu);
+			
+			// Avisando que o game over ocorreu
+			global.game_over = true;
+			
+		}
 	}
 }
 
