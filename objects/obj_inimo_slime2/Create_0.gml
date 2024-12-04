@@ -6,6 +6,8 @@ event_inherited();
 
 range = 30;
 
+dano_valor = 2;
+
 dir = 0;
 
 // Atualizando estrutura de sprites
@@ -43,6 +45,18 @@ estado_attack.roda = function()
 		{
 			x += _x;
 			y += _y;
+			
+			if (instance_exists(dano))
+			{
+				dano.x = x;
+				dano.y = y;
+			}
+		}
+		
+		if (dano == noone) // Se ainda nao tenho dano
+		{
+			dano = instance_create_depth(x, y, depth, obj_dano_inimigo);
+			dano.dano = dano_valor;
 		}
 	}
 	
@@ -50,6 +64,16 @@ estado_attack.roda = function()
 	{
 		troca_estado(estado_idle);	
 	}
+}
+
+estado_attack.finaliza = function()
+{
+	if (instance_exists(dano))
+	{
+		instance_destroy(dano);	
+	}
+	
+	dano = noone;
 }
 
 inicia_estado(estado_idle);

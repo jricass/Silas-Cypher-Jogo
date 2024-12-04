@@ -6,6 +6,8 @@ tempo_estado = game_get_speed(gamespeed_fps) * 15;
 timer_estado = tempo_estado;
 
 range = 15;
+dano_valor = 1;
+dano = noone;
 
 // Criando uma estrutura com as sprites dele
 sprite =
@@ -111,7 +113,13 @@ estado_attack.inicia = function()
 
 estado_attack.roda = function()
 {
-	
+	if (dano == noone and image_index >= 7)
+	{
+		// Criando meu dano
+		dano = instance_create_depth(x, y, depth, obj_dano_inimigo);
+		// Passando o valor do dano
+		dano.dano = dano_valor;
+	}
 	// Saindo do estado de attack
 	if (image_index >= image_number - .5)
 	{
@@ -122,7 +130,14 @@ estado_attack.roda = function()
 
 estado_attack.finaliza = function()
 {
-	alvo = noone; 	
+	alvo = noone;
+	
+	if (instance_exists(dano))
+	{
+		instance_destroy(dano);	
+	}
+	
+	dano = noone;
 }
 
 #endregion

@@ -1,3 +1,6 @@
+dano = noone;
+dano_valor = 1;
+
 // Iniciando Variaveis padrão dos inimigos
 xscale = 1;
 dead = false;

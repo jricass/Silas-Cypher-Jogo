@@ -1,8 +1,16 @@
 // Iniciar Variáveis
 
-meu_dano = noone;
-dano_poise = 4;
+max_vida = 5;
+vida = max_vida;
 
+poise_max = 5;
+poise = poise_max;
+
+meu_dano = noone;
+dano_poise = 6;
+
+imageindex = 0;
+	
 // Iniciando primeiro estado
 estado_idle = new estado();
 
@@ -11,6 +19,40 @@ estado_walk = new estado();
 
 // Iniciando estado de ataque;
 estado_attack = new estado(); 
+
+// Iniciando estado de hit
+estado_hit = new estado();
+
+// Iniciando estado de morte
+estado_death = new estado();
+
+#region lida_dano
+
+lida_dano = function(_dano = 1, _poise = 1)
+{
+	// Perdendo Vida
+	vida -= _dano;
+	
+	poise = max(poise - _poise, 0);
+	
+	// Se perdi toda a minha vida
+	if (vida <= 0)
+	{
+		troca_estado(estado_death);
+		return;
+	}
+	
+	// Se ainda tenho vida, vou para o estado de hit
+	// E nao estou no estado de ataque
+	// A nao ser que eu esteja sem poise
+	// Se ainda tenho poise e nao estou atacando 
+	if (poise <= 0 or estado_atual != estado_attack)
+	{
+		troca_estado(estado_hit);
+	}
+}
+
+#endregion
 
 #region estado_idle
 
@@ -140,6 +182,66 @@ estado_attack.finaliza = function()
 	// Encerro meu dano
 	instance_destroy(meu_dano);
 	
+}
+
+#endregion
+
+#region estado_hit
+
+estado_hit.inicia = function()
+{
+	sprite_index = define_sprite(dir, spr_player_hit_side, spr_player_hit_front, spr_player_hit_back);
+	image_index = 0;
+	
+	velh = 0;
+	velv = 0;
+	
+	imageindex = 0;
+	
+	obj_screenshake.ang = 5;
+	obj_screenshake.valor += 20;
+}
+
+estado_hit.roda = function()
+{
+	// saindo do estado ao final da animação
+	if (image_index > imageindex)
+	{
+		imageindex = image_index;	
+	}
+	
+	// Se o meu imageindex for maior que o image_index 
+	// Isso quer dizer que o image_index foi zerado
+	// Logo, ele encerrou a animação
+	if (imageindex > image_index)
+	{
+		troca_estado(estado_idle);
+	}	
+	
+}
+
+#endregion
+
+#region estado_death
+
+estado_death.inicia = function()
+{
+	sprite_index = spr_player_death;
+	image_index = 0;
+	imageindex = 0;
+}
+
+estado_death.roda = function()
+{
+	if (image_index > imageindex)
+	{
+		imageindex = image_index;
+	}
+	
+	if (imageindex > image_index)
+	{
+		image_index = image_number - 1;	
+	}
 }
 
 #endregion
