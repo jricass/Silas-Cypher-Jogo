@@ -11,6 +11,12 @@ dano_poise = 6;
 
 imageindex = 0;
 
+#region dialogo
+
+
+
+#endregion
+
 // Metodo de interação com a fogueira (SAVE)
 ativa_fogueira = function()
 {

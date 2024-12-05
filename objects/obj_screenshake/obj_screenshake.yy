@@ -9,8 +9,8 @@
   "name":"obj_screenshake",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"ScreenShake",
+    "path":"folders/Objetos/ScreenShake.yy",
   },
   "parentObjectId":null,
   "persistent":false,
