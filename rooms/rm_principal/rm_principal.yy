@@ -99,6 +99,7 @@
     {"name":"inst_6C531B24","path":"rooms/rm_principal/rm_principal.yy",},
     {"name":"inst_F06F249","path":"rooms/rm_principal/rm_principal.yy",},
     {"name":"inst_76434185","path":"rooms/rm_principal/rm_principal.yy",},
+    {"name":"inst_6FC8F6F7","path":"rooms/rm_principal/rm_principal.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -217,6 +218,11 @@
         {"$GMRInstance":"v1","%Name":"inst_F06F249","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F06F249","objectId":{"name":"obj_sensor","path":"objects/obj_sensor/obj_sensor.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_sensor","path":"objects/obj_sensor/obj_sensor.yy",},"propertyId":{"name":"destino","path":"objects/obj_sensor/obj_sensor.yy",},"resource":{"name":"rm_senha","path":"rooms/rm_senha/rm_senha.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_senha",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.25,"scaleY":0.375,"x":384.0,"y":8.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6FC8F6F7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6FC8F6F7","objectId":{"name":"obj_sensor","path":"objects/obj_sensor/obj_sensor.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_sensor","path":"objects/obj_sensor/obj_sensor.yy",},"propertyId":{"name":"destino","path":"objects/obj_sensor/obj_sensor.yy",},"resource":{"name":"rm_02","path":"rooms/rm_02/rm_02.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_02",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_sensor","path":"objects/obj_sensor/obj_sensor.yy",},"propertyId":{"name":"posicao_x","path":"objects/obj_sensor/obj_sensor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"600",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_sensor","path":"objects/obj_sensor/obj_sensor.yy",},"propertyId":{"name":"posicao_y","path":"objects/obj_sensor/obj_sensor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"80",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.25,"scaleY":0.375,"x":608.0,"y":8.0,},
       ],"layers":[],"name":"Colizor","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"PortasD","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"PortasD","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":27,"SerialiseWidth":48,"TileCompressedData":[
           -3,-2147483648,5,98,-2147483648,339,340,341,-15,-2147483648,3,336,337,338,-11,-2147483648,3,339,340,
